@@ -1,0 +1,33 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <title>Leaflet Realtime</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.0.3/dist/leaflet.css" />
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <style>
+           #map {
+            position: centered
+        }
+    </style>
+	
+	{% block style %}	{% endblock %}
+<body class="body">
+
+<div class="container">
+<div class="row">
+<div class="col-md-1"></div>
+<div class="col-md-5 capas"  id="map">
+    <script src="https://unpkg.com/leaflet@1.0.3/dist/leaflet-src.js"></script>
+   {% block scripts %}{% endblock %}
+</div>
+<div class="col-md-5 capas">
+<br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br>
+</div>
+<div class="col-md-1"></div>
+
+</div>
+</div>
+
+</body>
+</html>
+
